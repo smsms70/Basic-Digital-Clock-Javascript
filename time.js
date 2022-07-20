@@ -19,8 +19,8 @@ const toNumbers = (a ,b) =>{
 	if (a % 10=== 9) nine(b);
 };
 
-
 const globalTime = () =>{
+	insideColor();
 	let date = new Date();
 	let seconds = date.getSeconds();
 	toNumbers(seconds,5);

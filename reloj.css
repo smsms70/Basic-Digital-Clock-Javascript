@@ -1,5 +1,5 @@
 body {
-	background: #aaa;
+	background: #57a1b0;
 	display: flex;
 }
 #main{
@@ -16,7 +16,7 @@ body {
 #main div div{
 	height: 65px;
 	width: 65px;
-	background: #e54;
+	background: #b06657;
 	transform: rotate(45deg);
 	position: absolute;
 	text-indent: 10px;
@@ -33,7 +33,7 @@ body {
 		left: 50px;
 	}
 	#h_centro{
-		background: #aaa !important;
+		/*background: #aaa;*/
 		transform: rotate(0) !important;
 		left: 50px;
 		z-index: 50;
@@ -50,7 +50,7 @@ body {
 		left: 50px;
 	}
 	#h_centro_bajo{
-		background: #aaa !important;
+		/*background: #aaa;*/
 		transform: rotate(0) !important;
 		left: 50px;
 		top: 100px;
@@ -73,4 +73,15 @@ body {
 }
 #hora{
 	margin-left: 10px;
+}
+input{
+	position: absolute;
+	top: 350px;
+	height: 50px;
+	width: 80px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+#numColor{
+	left: 100px;
 }
