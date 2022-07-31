@@ -1,22 +1,22 @@
-const toNumbers = (a ,b) =>{
-	a = a % 60;
-	if (a < 10) cero(b-1);
-	if (a >= 10) one(b-1);
-	if (a >= 20) two(b-1);
-	if (a >= 30) three(b-1);
-	if (a >= 40) four(b-1);
-	if (a >= 50) five(b-1);
+const toNumbers = (time ,position) =>{
+	time = time % 60;
+	if (time < 10) cero(position-1);
+	if (time >= 10) one(position-1);
+	if (time >= 20) two(position-1);
+	if (time >= 30) three(position-1);
+	if (time >= 40) four(position-1);
+	if (time >= 50) five(position-1);
 
-	if (a % 10=== 0) cero(b); 
-	if (a % 10=== 1) one(b); 
-	if (a % 10=== 2) two(b);
-	if (a % 10=== 3) three(b);
-	if (a % 10=== 4) four(b);
-	if (a % 10=== 5) five(b);
-	if (a % 10=== 6) six(b); 
-	if (a % 10=== 7) seven(b);
-	if (a % 10=== 8) eight(b);
-	if (a % 10=== 9) nine(b);
+	if (time % 10=== 0) cero(position); 
+	if (time % 10=== 1) one(position); 
+	if (time % 10=== 2) two(position);
+	if (time % 10=== 3) three(position);
+	if (time % 10=== 4) four(position);
+	if (time % 10=== 5) five(position);
+	if (time % 10=== 6) six(position); 
+	if (time % 10=== 7) seven(position);
+	if (time % 10=== 8) eight(position);
+	if (time % 10=== 9) nine(position);
 };
 
 const globalTime = () =>{
@@ -28,6 +28,5 @@ const globalTime = () =>{
 	toNumbers(minutes,3)
 	let hours = date.getHours();
 	toNumbers(hours,1);
-
 }
 setInterval(globalTime, 1000);
